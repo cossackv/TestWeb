@@ -19,7 +19,6 @@
     },
     "Testing": {
       "commandName": "Project",
-      "launchBrowser": true,
       "launchUrl": "api/pagedou",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
