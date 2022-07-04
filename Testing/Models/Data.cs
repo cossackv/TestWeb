@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Components.Forms;
 
 namespace Testing.Models
 {
@@ -25,18 +26,26 @@ namespace Testing.Models
                        $"and his word count is {Count}";
             }
 
-            private string ReadFromFile()
+            private void ReadFromFile()
             {
-                return Text = System.IO.File.ReadAllText(@"C:\Users\dmytr\source\repos\TestWeb\Testing\DB\DataBaseFile.txt");
+                 Text = System.IO.File.ReadAllText(@"C:\Users\dmytr\source\repos\TestWeb\Testing\DB\DataBaseFile.txt");
             }
 
             private void GetCount()
             {
-                List<string> result = Text.Split(new [] { ',' }).ToList();
-                Count = result.Count;
+                Count = 0;
+                int index = 0;
+                while (index < Text.Length - 1)
+                {
+                    if (Text[index] == ' ' || Text[index] == '\n' || Text[index] == '\t')
+                    {
+                        Count++;
+                    }
+
+                    index++;
+                }
+                
             }
-
-
     }
 
         
