@@ -20,11 +20,6 @@ namespace Testing.Models
                 ReadFromFile();
                 GetCount();
             }
-            public override string ToString()
-            {
-                return $"Text of file: {Text}\n" +
-                       $"and his word count is {Count}";
-            }
 
             private void ReadFromFile()
             {
