@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{5E0592EE-4439-4094-90DA-C9185F8FAE7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing", "Testing\Testing.csproj", "{5E0592EE-4439-4094-90DA-C9185F8FAE7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{2291DAED-2D9D-4780-B890-FBFDF3F54603}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5E0592EE-4439-4094-90DA-C9185F8FAE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E0592EE-4439-4094-90DA-C9185F8FAE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E0592EE-4439-4094-90DA-C9185F8FAE7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2291DAED-2D9D-4780-B890-FBFDF3F54603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2291DAED-2D9D-4780-B890-FBFDF3F54603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2291DAED-2D9D-4780-B890-FBFDF3F54603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2291DAED-2D9D-4780-B890-FBFDF3F54603}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
